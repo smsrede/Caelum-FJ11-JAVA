@@ -47,7 +47,8 @@ public class Array {
 		
 	}//fim do metodo idade
 	
-	
+	//PRECISO TER UM ARRAY INSTANCIADO E PREENCHIDO
+	//PARA PODER PASSAR COMO PARAMETRO
 	static void imprimeArray(int[] array){
 		for (int i=0; i<array.length;i++){
 			System.out.println(array[i]);
