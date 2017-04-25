@@ -7,6 +7,7 @@ public class Banco {
 		Funcionario f1 = new Funcionario();
 		Funcionario f2 = new Funcionario();
 		Data data = new Data();
+		 
 		
 		
 		f1.nome="Samuel";
