@@ -11,6 +11,7 @@ public class TestaExercicios {
 		po1.mostraTodos();
 		
 		
+		
 		/*
 		 * Abaixo foi o exercício 1
 		 */

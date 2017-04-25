@@ -8,8 +8,6 @@ public class Banco {
 		Funcionario f2 = new Funcionario();
 		Data data = new Data();
 		
-		ContaNova minhasContas = new ContaNova[10];
-		
 		
 		f1.nome="Samuel";
 		f1.salario=100;
