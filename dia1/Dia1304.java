@@ -12,8 +12,8 @@ public class Dia1304 {
 		long x = 1000000000;
 		int i2 = (int) x;
 		System.out.println(i2);
-		int f = 1;
-		char g = (char) f;
+		//int f = 1;
+		//char g = (char) f;
 		i = 0;
 		while (i < 10) {
 			System.out.println(i);

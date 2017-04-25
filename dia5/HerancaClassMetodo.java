@@ -6,7 +6,7 @@ public class HerancaClassMetodo {
 
 		// c = cliente
 		Conta minhaConta = new Conta();
-		Cliente c = new Cliente();
+		//Cliente c = new Cliente();
 		// o retorno do NEW para a var "c" é uma ref, uma flecha
 		// teste em tese:
 		// minhaConta.titular = c;
