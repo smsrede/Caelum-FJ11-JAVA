@@ -27,16 +27,21 @@ public class EstudoArray1 {
 		minhasContas = new Conta[10];
 
 		// Aqui crio a variavel que passarei no array
-		Conta contaNova = new Conta();
+		
+		Conta contasNovas = new Conta();//---------------------- // THALLES - STATIC
 		// aqui abasteço atributos para teste
-		contaNova.saldo = 81000;
-		contaNova.nome = "Samuel";
+		contasNovas.saldo = 81000;
+		contasNovas.nome = "Samuel";
 		// aqui passo a isntancia do obj para dentro da posição do array criada
 		// do mesmo tipo
 		// e recebe a estrutura iteira
 
-		minhasContas[0] = contaNova; // percaba que aqui conNova esta com
+		//---------------------- // THALLES - STATIC - Quando atruibuo a referencia aqui dá o erro na declaração acima
+								//mas quando tudo estava por engano dentro do metodo dava certo
+		
+		minhasContas[0] = contasNovas; // percaba que aqui conNova esta com
 										// atributos abastecidos
+		//------------------------// THALLES -STATIC
 		// aqui comprovo que a posição 0 recebeu TUDO de Conta
 		System.out.println(minhasContas[0].saldo);
 		System.out.println(minhasContas[0].nome);
@@ -47,7 +52,7 @@ public class EstudoArray1 {
 		// direto
 		// num array do tipo Conta (abaixo)
 		// Repare que podia ser num FOR [i]
-
+ 
 		// perceba que cada posição do array guarda referencias!
 
 		minhasContas[1] = new Conta();
@@ -67,10 +72,12 @@ public class EstudoArray1 {
 	}//fim do bilhete
 
 	
-	
-	public class Conta {
+	public static class Conta {// THALLES -STATIC
 		int saldo;
 		String nome;
-	}
+	}//fim de Conta
 
-}
+	
+	
+	
+}//fim de Estudo
