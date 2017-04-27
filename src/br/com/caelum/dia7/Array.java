@@ -1,5 +1,7 @@
 package br.com.caelum.dia7;
 
+import com.sun.org.apache.xpath.internal.operations.Mult;
+
 public class Array {
 	public static void main(String [] args) {
 		
@@ -26,13 +28,19 @@ public class Array {
 	minhasContas[1] = new ContaTeste();
 	minhasContas[1].numero = 22222;
 	*/
-	
+
 	idade();
-	//criei um array, PREENCHI, E PASSEI COMO PARAMTRO
 	
+	//criei um array, PREENCHI, E PASSEI COMO PARAMTRO
 	int[] intArray = new int[]{1, 2, 3};
 	
 	imprimeArray(intArray);
+	
+	formelhorado();
+	
+	imprimeArray2(intArray);
+	
+	
 	
 	}//fim do  main
 	
@@ -54,8 +62,46 @@ public class Array {
 	static void imprimeArray(int[] array){
 		for (int i=0; i<array.length;i++){
 			System.out.println(array[i]);
-		}
+		}		
 	}
+	
+	
+	
+	static void formelhorado(){
+		int[] numeros = new int[10];
+		for (int i=0;i<numeros.length;i++){
+			numeros[i] = i * 20;
+		}
+		/*
+		//antes do enhanced-for
+		for (int i=0;i<numeros.length;i++){
+			System.out.println(numeros[i]);;
+		}
+		*/
+		
+		//depois
+		//imprimir a array - enhanced-for
+		for (int x : numeros){
+			System.out.println(x);
+		}
+		
+	}
+	//usando o novo enhanced-for para imprimir array de tamano desconhcido
+	static void imprimeArray2(int[] array){
+		for (int x : array){
+			//x = x*20;
+			System.out.println(x);
+		}
+		
+	
+	
+	
+	
+		
+	}
+	
+	
+	
 	
 	
 }//fim da class

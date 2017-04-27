@@ -5,7 +5,7 @@ public class Data {
 	int mes = 05;
 	int ano = 2017;
 	
-	String formatada(){
+	public String formatada(){
 		String dataFormadata;
 		dataFormadata = this.dia + "/" + this.mes + "/" + this.ano;
 		return dataFormadata;

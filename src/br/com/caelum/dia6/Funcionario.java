@@ -1,23 +1,23 @@
 package br.com.caelum.dia6;
 
 public class Funcionario {
-	String nome;
-	String departamento;
-	String rg;
-	Data dataEntrada;
-	double salario;
-	boolean estaNaEmpresa;
+	public String nome;
+	public String departamento;
+	public String rg;
+	public Data dataEntrada;
+	public double salario;
+	public boolean estaNaEmpresa;
 	//Data data = new Data();
 	
 	
 	//Icrementa o salario do empregado conforme aumento salarial desejado, passado no argumento
-	void bonifica(double aumento) {
+	public void bonifica(double aumento) {
 
 		this.salario += aumento;
 	}
 
 	//responde se o emprego encontra-se empregado na empresa ou não
-	String admissao() {
+	public String admissao() {
 		String admitidoOuNao;
 		if (this.estaNaEmpresa) {
 			admitidoOuNao = "Empregado está na Empresa";
@@ -28,7 +28,7 @@ public class Funcionario {
 	}
 
 	//calcula o ganho anual do empregado
-	double calculaGanhoAnual() {
+	public double calculaGanhoAnual() {
 		double ganhoAnual;
 		ganhoAnual = this.salario * 12;
 
@@ -37,7 +37,7 @@ public class Funcionario {
 	
 	
 	//mostra todas as alteraões nos atrubutos durante os testes
-	void mostra(){
+	public void mostra(){
 		System.out.println("Nome:				                   " + this.nome);
 		System.out.println("Departamento:					   " + this.departamento);
 		System.out.println("Data de Entrada:				   " + this.dataEntrada.formatada());
